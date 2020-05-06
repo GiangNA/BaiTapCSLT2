@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Windows.Forms;
 
-namespace Chuong3_Bai6
+namespace Chuong4_Bai1
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            DanhSachSV htttak21 = new DanhSachSV();
-            htttak21.Nhap();
-            htttak21.Xuat();
-            htttak21.SapXep();
-            htttak21.Xuat();
-            Console.ReadLine();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            /// Application.Run(new FrmChaoMung());
+           /// Application.Run(new FrmTinhTong());
+           /// Application.Run(new FrmMain());
+            Application.Run(new TinhTong());
         }
     }
 }
